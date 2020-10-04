@@ -1,0 +1,44 @@
+name: "Ao no Kanata no Four Rhythm"
+version: "Linux native from outdated Windows native standalone directory"
+game_slug: aokana-native
+slug: aokana-native-standalone-old-installer
+runner: linux
+
+script:
+  # This native Linux runner internally runs the Windows patch installer via
+  # WINE below.
+  require-binaries: wine
+
+  files:
+    - linux_port: https://github.com/leycec/aokana-linux/releases/download/v0.0.1/aokana-linux_0.0.1.zip
+    - windows_patch_latest:
+        url: https://nekonyansoft.com/download/free/patch/7
+        filename: AokanaUpdate1.21PE_march.zip
+    - windows_exe: N/A:Select main Windows executable "Aokana.exe"
+    - linux_videos: N/A:Select Linux videos archive (e.g., "AokanaVideoFilesEN.zip")
+
+  game:
+    exe: $GAMEDIR/Aokana
+
+  installer:
+    # Recursively copy the contents of the unpatched portable directory
+    # containing the eslected main Windows executable into the Lutris-specific
+    # game directory via a trivial Bash snippet, as Lutris currently fails to
+    # natively allow this sort of dynamic scripting.
+    - execute:
+        command: |
+          WINDOWS_APP_DIR="$(dirname "${windows_exe}")"
+          echo "Copying \"${WINDOWS_APP_DIR}\" -> \"${GAMEDIR}\"..."
+          cp -R "${WINDOWS_APP_DIR}/"* "${GAMEDIR}/"
+    - extract:
+        file: windows_patch_latest
+        dst: $CACHE/
+    - execute:
+        description: Installing latest Windows patch...
+        file: wine
+        args: start /unix $CACHE/AokanaUpdate1.21.exe
+    - extract:
+        file: linux_port
+    - extract:
+        file: linux_videos
+    - chmodx: $GAMEDIR/Aokana

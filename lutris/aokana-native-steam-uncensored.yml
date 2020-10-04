@@ -1,0 +1,31 @@
+name: "Ao no Kanata no Four Rhythm"
+version: "Linux native from uncensored Steam installation"
+game_slug: aokana-native
+slug: aokana-native-steam-uncensored-installer
+runner: steam
+
+script:
+  files:
+    - linux_port: https://github.com/leycec/aokana-linux/releases/download/v0.0.1/aokana-linux_0.0.1.zip
+    - perfect_edition_patch:
+        url: https://nekonyansoft.com/download/free/23
+        filename: Aokana_PerfectEdition+R18_Patch.zip
+    - linux_videos: N/A:Select Linux videos archive (e.g., "AokanaVideoFilesEN.zip")
+
+  game:
+    appid: 1044620
+    run_without_steam: true
+    steamless_binary: $GAMEDIR/Aokana
+
+  installer:
+    - extract:
+        file: perfect_edition_patch
+        dst: $CACHE/
+    - move:
+        src: $CACHE/Aokana_PE+R18_Patch/adult.dat
+        dst: $GAMEDIR/Aokana_Data/
+    - extract:
+        file: linux_port
+    - extract:
+        file: linux_videos
+    - chmodx: $GAMEDIR/Aokana
