@@ -1,7 +1,7 @@
 name: "Ao no Kanata no Four Rhythm"
-version: "Linux native from outdated Windows native standalone directory"
+version: "Linux native from portable Windows directory"
 game_slug: aokana-native
-slug: aokana-native-standalone-old-installer
+slug: aokana-native-portable-installer
 runner: linux
 
 script:

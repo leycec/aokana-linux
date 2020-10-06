@@ -4,44 +4,40 @@ Ao no Kanata no Four Rhythm (Aokana)… for Linux!
 ================================================
 
 This repository officially hosts **[Lutris-based Linux
-installers][lutris-aokana]** for the [unofficial native Linux port][linux-aokana]
-of *[Ao no Kanata no Four Rhythm: Beyond the sky, into the
+installers][lutris-aokana]** for the [unofficial native Linux
+port][linux-aokana] of *[Ao no Kanata no Four Rhythm: Beyond the sky, into the
 firmament][nekonyan-aokana]*, officially localized as *Aokana: Four Rhythm
 Across the Blue* and commonly abbreviated as merely *Aokana* (あおかな). Read
-the [highly-acclaimed][vndb-aokana] [shounen sports
-chuunibyou](https://forums.fuwanovel.net/topic/1820-chuuni-what-is-this-genre)
-visual novel that spawned a [derivative outpouring of mostly mediocre anime and
-manga](https://en.wikipedia.org/wiki/Aokana:_Four_Rhythm_Across_the_Blue#Adaptations)
+the [highly-acclaimed][vndb-aokana] [shounen sports chuunibyou][chuuni] visual
+novel that [spawned a derivative outpouring of anime and manga
+spinoffs](https://en.wikipedia.org/wiki/Aokana:_Four_Rhythm_Across_the_Blue#Adaptations)
 in the most cultured way possible: as a native 1440p application under a Linux
 distro near you.
 
 > ⚠️
 
-> This port is *not* officially endorsed by [NekoNyan][nekonyan],
-> *[Aokana][aokana]*'s applause-worthy [Steam publisher][steam-aokana] and
-> English localizer. We still love you, [NekoNyan][nekonyan].
+> This port is **not officially endorsed** by [NekoNyan][nekonyan],
+> *[Aokana][nekonyan-aokana]*'s applause-worthy [Steam publisher][steam-aokana]
+> and English localizer. We still love you, [NekoNyan][nekonyan].
 
 ## Installation
 
-> ⚠️
+> ☢
 
-> This port currently only supports [NekoNyan][nekonyan]'s **[official Steam
-> release][steam-aokana].** We hope to support all digital and physical
-> releases of *[Aokana][nekonyan-aokana]* bought directly from other
-> storefronts (e.g., [NekoNyan themselves][nekonyan-aokana],
-> [JAST][jast-aokana]) at a later date. Both ship *[Aokana][nekonyan-aokana]*
-> via non-standard Windows-specific installers and archival formats frustrating
-> to support under Lutris.
+> These installers are experimental, largely untested, and possibly even (but
+> hopefully *not*) broken. Please help us get a better idea of the state of
+> these installers by **[submitting a new issue documenting your installation
+> experience][local-issue-new].** Installers verified as working will be
+> published to [the Lutris page for *Aokana*][lutris-aokana]. Until verified,
+> these installers are *only* available from this repository.
 
 1. **Please legally purchase [NekoNyan's English localization of
    *Aokana*][steam-aokana],** because [NekoNyan][nekonyan] continually goes
-   beyond the call of for-profit duty to support censorship-free localization
-   throughout the English visual novel community. We currently recommend
-   **[Steam][steam-aokana],** which we [support with multiple Lutris
-   installers][lutris-aokana-steam]. Digital storefronts include:
+   beyond the call of corporate duty to support censorship-free localization
+   throughout the English visual novel community. Online storefronts include:
    * **[NekoNyan themselves][nekonyan-aokana].**
    * **[JAST][jast-aokana].**
-   * **[Steam][steam-aokana].** (*Currently recommended.*)
+   * **[Steam][steam-aokana].**
 1. Download **Linux-compatible videos** in the language of your choice:
    * **[English and/or
      Japanese](https://www.mediafire.com/file/bhm65i1h9tx68yv/file).**
@@ -50,101 +46,88 @@ distro near you.
    * **[Traditional
      Chinese](http://www.mediafire.com/file/fsisjaibh73wc8v/file).**
 1. Choose the installation route that's right for you:
+   * **"[NekoNyan][nekonyan-aokana] or [JAST][jast-aokana], please."** But of
+     course, cultured senpai! This route installs the [*Aokana Perfect
+     Edition+* R18 release][steam-aokana-perfect-edition] directly purchased
+     from [NekoNyan][nekonyan-aokana] or [JAST][jast-aokana] (identical to the
+     uncensored Steam release detailed below):
+     1. Download our [**experimental** NekoNyan-or-JAST Lutris
+        installer][local-nekonyan-or-jast].
+     1. Run the following command in a terminal from the directory you
+        downloaded this installer to:
 
-   * **["Steam, please."][steam-aokana]** You have chosen wisely. Note,
+            lutris -i aokana-native-nekonyan-or-jast.yml
+
+     3. When asked for a *Destination Folder*, select the **Linux game
+        directory** that Lutris has already created for
+        *[Aokana][nekonyan-aokana]* (e.g.,
+        `/home/insert_username_here/Games/aokana-native/`):
+        1. Click the *Browse* button.
+        1. Double-click the **root Linux directory** `/`. Do *not*
+           double-click a Windows directory (e.g., `My Computer`, `Trash`),
+           because Lutris expects native Linux games to be installed to
+           standard Linux directories.
+        1. Select the **Linux game directory** that Lutris has already created
+           for *[Aokana][nekonyan-aokana]* (e.g.,
+           `/home/insert_username_here/Games/aokana-native/`).
+     1. Click the *Close* button.
+   * **["Steam, please."][steam-aokana]** Your wish is our Linux command. Note,
      however, that [NekoNyan][nekonyan]'s [vanilla Steam release of
      *Aokana*][steam-aokana] is the **censored All Ages** version. Some people
-     like that. Some people don't. (Obligatory shoutouts to
-     [/r/visualnovels][r-visualnovels] here.) Again, choose the installation
-     subroute that's right for you:
-
-     * **"Censored, please."** Sure thing! It's your visual novel. This route
-       installs the [censored All Ages vanilla Steam release of
+     like that. Some people don't. <sup>Obligatory shoutouts to
+     [/r/visualnovels][r-visualnovels] here.</sup> Again, choose the
+     installation subroute that's right for you:
+     * **"Censored, please."** Sure thing! It's your visual novel. This
+       subroute installs the [censored All Ages vanilla Steam release of
        *Aokana*][steam-aokana]:
-
        1. Download our [**experimental** censored Steam Lutris
           installer][local-steam-censored].
-       1. Run the following command within a terminal from the directory you
-          you downloaded this installer to:
+       1. Run the following command in a terminal from the directory you
+          downloaded this installer to:
 
               lutris -i aokana-native-steam-censored.yml
 
-     * **"Uncensored, please."** You have again chosen wisely. This route
+     * **"Uncensored, please."** You have chosen wisely. This subroute
        installs the [free-as-in-beer Perfect Edition+ R18 Steam DLC
        patch][steam-aokana-perfect-edition] restoring all CGs, scenes, and
        dialogues from the original Japanese release as well as adding Misaka's
        supplementary scenes from the so-called *Aokana Perfect Edition+*:
-
        1. Download our [**experimental** uncensored Steam Lutris
           installer][local-steam-uncensored].
-       1. Run the following command within a terminal from the directory you
-          you downloaded this installer to:
+       1. Run the following command in a terminal from the directory you
+          downloaded this installer to:
 
               lutris -i aokana-native-steam-uncensored.yml
 
-   * **[NekoNyan][nekonyan-aokana], [JAST][jast-aokana], or unspecified
-     "other sources."** Sure thing, bud! It's your wallet. This route installs
-     the [*Aokana Perfect Edition+* R18 release][steam-aokana-perfect-edition]
-     identical to the uncensored Steam release discussed above. Again, choose
-     the installation subroute that's right for you:
+   * **"Unspecified other sources, please."** Please legally purchase
+     [NekoNyan's English localization of *Aokana*][steam-aokana] when you have
+     the financial means – if you haven't already, of course. Without ongoing
+     monetary support, the visual novel community will get a Bad End (which is
+     bad):
+     1. Download our [**experimental** portable Lutris
+        installer][local-portable].
+     1. Run the following command in a terminal from the directory you
+        downloaded this installer to:
 
-     * **"[NekoNyan][nekonyan-aokana] or [JAST][jast-aokana], please."** But of
-       course, cultured Sir or Madam… Your wish is our Linux command:
+            lutris -i aokana-native-portable.yml
 
-       1. Download the Windows installer for *[Aokana][nekonyan-aokana]* that
-          you recently purchased.
-       1. Install the Windows version of *[Aokana][nekonyan-aokana]* to any
-          arbitrary directory by running this installer via [WINE][wine]. Note
-          that it doesn't matter *where* you install the Windows version of
-          *[Aokana][nekonyan-aokana]* to – only that you can find this
-          directory again later. For example, if this installer is named
-          `"Aokana - Four Rhythms Across the Blue.exe"`, run the following
-          command within a terminal from the directory you downloaded this
-          installer to:
+     3. When asked to *Select main Windows executable "Aokana.exe"*, select
+        the top-level `Aokana.exe` file in the directory containing your
+        portable Windows copy of *[Aokana][nekonyan-aokana]*.
+     3. When asked for a *Destination Folder*, select the **Linux game
+        directory** that Lutris has already created for
+        *[Aokana][nekonyan-aokana]* (e.g.,
+        `/home/insert_username_here/Games/aokana-native/`):
+        1. Click the *Browse* button.
+        1. Double-click the **root Linux directory** `/`. Do *not*
+           double-click a Windows directory (e.g., `My Computer`, `Trash`),
+           because *Aokana* won't be there.
+        1. Select the **Linux game directory** that Lutris has already created
+           for *[Aokana][nekonyan-aokana]* (e.g.,
+           `/home/insert_username_here/Games/aokana-native/`).
+     1. Click the *Close* button.
 
-              wine start /unix "Aokana - Four Rhythms Across the Blue.exe"
-
-       3. Download our [up-to-date standalone Lutris
-          installer][local-standalone-new].
-       1. Run the following command within a terminal from the directory you
-          you downloaded this installer to:
-
-              lutris -i aokana-native-standalone-new.yml
-
-       5. When asked to *Select main Windows executable "Aokana.exe"*, select
-          the top-level `Aokana.exe` file in the directory you installed the
-          Windows version of *[Aokana][nekonyan-aokana]* to earlier.
-
-     * **"Unspecified other sources, please."** Please legally purchase
-       [NekoNyan's English localization of *Aokana*][steam-aokana] when you
-       have the financial opportunity, matey. Without monetary support, the
-       English visual novel community will get a Bad End: <sup>*that's
-       bad*</sup>
-
-       1. Download our [up-to-date standalone Lutris
-          installer][local-standalone-old].
-       1. Run the following command within a terminal from the directory you
-          you downloaded this installer to:
-
-              lutris -i aokana-native-standalone-old.yml
-
-       3. When asked to *Select main Windows executable "Aokana.exe"*, select
-          the top-level `Aokana.exe` file in the directory you downloaded the
-          Windows version of *[Aokana][nekonyan-aokana]* to earlier.
-       1. When asked for the *Destination Folder*, select the **Linux**
-          directory to which you are currently installing this **native Linux
-          port**:
-
-          1. Click the *Browse* button.
-          1. Double-click the **root Linux directory** `/`. Do *not*
-             double-click a Windows directory (e.g., `My Computer`, `Trash`),
-             because *Aokana* won't be there.
-          1. Select your **Linux port game directory** (e.g.,
-             `/home/insert_username_here/Games/aokana-native/`).
-
-       1. Click the *Close* button.
-
-You're done. *Praise Misaka!*
+You're done. Praise Misaka!
 
 ## Features
 
@@ -199,13 +182,25 @@ Authoritative credit for this native Linux port goes entirely to [Unity maestro
 and Fuwanovel forums contributor **loam**][loam]. *You are amazing and you
 surely know it.*
 
+## See Also
+
+If you enjoy this, you might also enjoy:
+
+* [*Fate/stay night [Réalta Nua] Ultimate Edition*… for
+  Linux!][leycec-fatestaynight], a [Lutris installer][lutris] automating
+  patching and execution of the *[Réalta Nua]* variant of the seminal [shounen
+  chuunibyou][chuuni] visual novel *[Fate/stay night][typemoon-fatestaynight]*.
+
+[chuuni]: https://forums.fuwanovel.net/topic/1820-chuuni-what-is-this-genre
 [nekonyan]: https://nekonyansoft.com
 [nekonyan-aokana]: https://nekonyansoft.com/shop/product/22
 [jast-aokana]: https://jastusa.com/aokana-four-rhythms-across-the-blue
 [leycec]: https://github/leycec
+[leycec-fatestaynight]: https://github.com/leycec/fsnrnue
 [loam]: https://forums.fuwanovel.net/profile/28837-loam
-[local-standalone-old]:   /raw/main/lutris/aokana-native-standalone-old.yml
-[local-standalone-new]:   /raw/main/lutris/aokana-native-standalone-new.yml
+[local-issue-new]: /issues/new/choose
+[local-nekonyan-or-jast]: /raw/main/lutris/aokana-native-nekonyan-or-jast.yml
+[local-portable]:         /raw/main/lutris/aokana-native-portable.yml
 [local-steam-censored]:   /raw/main/lutris/aokana-native-steam-censored.yml
 [local-steam-uncensored]: /raw/main/lutris/aokana-native-steam-uncensored.yml
 [lutris]: https://lutris.net
@@ -221,4 +216,5 @@ surely know it.*
 [media-vp8]: https://en.wikipedia.org/wiki/VP8
 [media-webm]:  https://www.webmproject.org/about
 [proton]: https://github.com/ValveSoftware/Proton
+[typemoon-fatestaynight]: https://typemoon.fandom.com/wiki/Fate/stay_night
 [wine]: https://www.winehq.org
