@@ -27,9 +27,7 @@ distro near you.
 > These installers are experimental, largely untested, and possibly even (but
 > hopefully *not*) broken. Please help us get a better idea of the state of
 > these installers by **[submitting a new issue documenting your installation
-> experience][local-issue-new].** Installers verified as working will be
-> published to [the Lutris page for *Aokana*][lutris-aokana]. Until verified,
-> these installers are *only* available from this repository.
+> experience][local-issue-new].**
 
 1. **Please legally purchase [NekoNyan's English localization of
    *Aokana*][steam-aokana],** because [NekoNyan][nekonyan] continually goes
@@ -53,8 +51,8 @@ distro near you.
      uncensored Steam release detailed below):
      1. Download our [**experimental** NekoNyan-or-JAST Lutris
         installer][local-nekonyan-or-jast].
-     1. Run the following command in a terminal from the directory you
-        downloaded this installer to:
+     1. Open a terminal to the directory containing that file.
+     1. Copy-and-paste this command into that terminal:
 
             lutris -i aokana-native-nekonyan-or-jast.yml
 
@@ -70,7 +68,7 @@ distro near you.
         1. Select the **Linux game directory** that Lutris has already created
            for *[Aokana][nekonyan-aokana]* (e.g.,
            `/home/insert_username_here/Games/aokana-native/`).
-     1. Click the *Close* button.
+     4. Click the *Close* button.
    * **["Steam, please."][steam-aokana]** Your wish is our Linux command. Note,
      however, that [NekoNyan][nekonyan]'s [vanilla Steam release of
      *Aokana*][steam-aokana] is the **censored All Ages** version. Some people
@@ -82,8 +80,8 @@ distro near you.
        *Aokana*][steam-aokana]:
        1. Download our [**experimental** censored Steam Lutris
           installer][local-steam-censored].
-       1. Run the following command in a terminal from the directory you
-          downloaded this installer to:
+       1. Open a terminal to the directory containing that file.
+       1. Copy-and-paste this command into that terminal:
 
               lutris -i aokana-native-steam-censored.yml
 
@@ -94,8 +92,8 @@ distro near you.
        supplementary scenes from the so-called *Aokana Perfect Edition+*:
        1. Download our [**experimental** uncensored Steam Lutris
           installer][local-steam-uncensored].
-       1. Run the following command in a terminal from the directory you
-          downloaded this installer to:
+       1. Open a terminal to the directory containing that file.
+       1. Copy-and-paste this command into that terminal:
 
               lutris -i aokana-native-steam-uncensored.yml
 
@@ -106,15 +104,15 @@ distro near you.
      bad):
      1. Download our [**experimental** portable Lutris
         installer][local-portable].
-     1. Run the following command in a terminal from the directory you
-        downloaded this installer to:
+     1. Open a terminal to the directory containing that file.
+     1. Copy-and-paste this command into that terminal:
 
             lutris -i aokana-native-portable.yml
 
-     3. When asked to *Select main Windows executable "Aokana.exe"*, select
+     4. When asked to *Select main Windows executable "Aokana.exe"*, select
         the top-level `Aokana.exe` file in the directory containing your
         portable Windows copy of *[Aokana][nekonyan-aokana]*.
-     3. When asked for a *Destination Folder*, select the **Linux game
+     4. When asked for a *Destination Folder*, select the **Linux game
         directory** that Lutris has already created for
         *[Aokana][nekonyan-aokana]* (e.g.,
         `/home/insert_username_here/Games/aokana-native/`):
@@ -125,7 +123,7 @@ distro near you.
         1. Select the **Linux game directory** that Lutris has already created
            for *[Aokana][nekonyan-aokana]* (e.g.,
            `/home/insert_username_here/Games/aokana-native/`).
-     1. Click the *Close* button.
+     6. Click the *Close* button.
 
 You're done. Praise Misaka!
 
@@ -179,8 +177,8 @@ completeness and to avoid confusion:
 ## Authors
 
 Authoritative credit for this native Linux port goes entirely to [Unity maestro
-and Fuwanovel forums contributor **loam**][loam]. *You are amazing and you
-surely know it.*
+and Fuwanovel forums contributor **loam**][loam], whose [initial post ignited
+the whole shebang][loam-post]. *You are amazing and you surely know it.*
 
 ## See Also
 
@@ -198,6 +196,7 @@ If you enjoy this, you might also enjoy:
 [leycec]: https://github/leycec
 [leycec-fatestaynight]: https://github.com/leycec/fsnrnue
 [loam]: https://forums.fuwanovel.net/profile/28837-loam
+[loam-post]: https://forums.fuwanovel.net/topic/23163-linux-port-now-released-ao-no-kanata-no-four-rythm-linux-port-18-patch-for-nintendo-switch
 [local-issue-new]: /issues/new/choose
 [local-nekonyan-or-jast]: /raw/main/lutris/aokana-native-nekonyan-or-jast.yml
 [local-portable]:         /raw/main/lutris/aokana-native-portable.yml
