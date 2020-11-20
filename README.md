@@ -100,7 +100,7 @@ distro near you.
    * **"Unspecified other sources, please."** Please legally purchase
      [NekoNyan's English localization of *Aokana*][steam-aokana] when you have
      the financial means – if you haven't already, of course. Without ongoing
-     monetary support, the visual novel community will get a Bad End (which is
+     monetary support, the visual novel community will get a BAD END (which is
      bad):
      1. Download our [**experimental** portable Lutris
         installer][local-portable].
@@ -197,11 +197,11 @@ If you enjoy this, you might also enjoy:
 [leycec-fatestaynight]: https://github.com/leycec/fsnrnue
 [loam]: https://forums.fuwanovel.net/profile/28837-loam
 [loam-post]: https://forums.fuwanovel.net/topic/23163-linux-port-now-released-ao-no-kanata-no-four-rythm-linux-port-18-patch-for-nintendo-switch
-[local-issue-new]: /issues/new/choose
-[local-nekonyan-or-jast]: /raw/main/lutris/aokana-native-nekonyan-or-jast.yml
-[local-portable]:         /raw/main/lutris/aokana-native-portable.yml
-[local-steam-censored]:   /raw/main/lutris/aokana-native-steam-censored.yml
-[local-steam-uncensored]: /raw/main/lutris/aokana-native-steam-uncensored.yml
+[local-issue-new]:        https://github.com/leycec/aokana-linux/issues/new/choose
+[local-nekonyan-or-jast]: https://github.com/leycec/aokana-linux/raw/main/lutris/aokana-native-nekonyan-or-jast.yml
+[local-portable]:         https://github.com/leycec/aokana-linux/raw/main/lutris/aokana-native-portable.yml
+[local-steam-censored]:   https://github.com/leycec/aokana-linux/raw/main/lutris/aokana-native-steam-censored.yml
+[local-steam-uncensored]: https://github.com/leycec/aokana-linux/raw/main/lutris/aokana-native-steam-uncensored.yml
 [lutris]: https://lutris.net
 [lutris-aokana]: https://lutris.net/games/aokana-four-rhythms-across-the-blue
 [lutris-aokana-steam]: https://lutris.net/games/aokana-four-rhythms-across-the-blue
