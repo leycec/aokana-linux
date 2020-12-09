@@ -1,22 +1,23 @@
-name: "Ao no Kanata no Four Rhythm"
-version: "Linux native from censored Steam installation"
-game_slug: aokana-native
-slug: aokana-native-steam-censored-installer
-runner: steam
+results:
+  - name: "Ao no Kanata no Four Rhythm"
+    version: "Linux native from censored Steam installation"
+    game_slug: aokana-native
+    slug: aokana-native-steam-censored-installer
+    runner: steam
 
-script:
-  files:
-    - linux_port: https://github.com/leycec/aokana-linux/releases/download/v0.0.1/aokana-linux_0.0.1.zip
-    - linux_videos: N/A:Select Linux videos archive (e.g., "AokanaVideoFilesEN.zip")
+    script:
+      files:
+        - linux_port: https://github.com/leycec/aokana-linux/releases/download/v0.0.1/aokana-linux_0.0.1.zip
+        - linux_videos: N/A:Select Linux videos archive (e.g., "AokanaVideoFilesEN.zip")
 
-  game:
-    appid: 1044620
-    run_without_steam: true
-    steamless_binary: $GAMEDIR/Aokana
+      game:
+        appid: 1044620
+        run_without_steam: true
+        steamless_binary: $GAMEDIR/Aokana
 
-  installer:
-    - extract:
-        file: linux_port
-    - extract:
-        file: linux_videos
-    - chmodx: $GAMEDIR/Aokana
+      installer:
+        - extract:
+            file: linux_port
+        - extract:
+            file: linux_videos
+        - chmodx: $GAMEDIR/Aokana

@@ -1,25 +1,26 @@
-name: "Ao no Kanata no Four Rhythm"
-version: "Linux native from NekoNyan or JAST Windows installer"
-game_slug: aokana-native
-slug: aokana-native-nekonyan-or-jast-installer
-runner: linux
+results:
+  - name: "Ao no Kanata no Four Rhythm"
+    version: "Linux native from NekoNyan or JAST Windows installer"
+    game_slug: aokana-native
+    slug: aokana-native-nekonyan-or-jast-installer
+    runner: linux
 
-script:
-  files:
-    - linux_port: https://github.com/leycec/aokana-linux/releases/download/v0.0.1/aokana-linux_0.0.1.zip
-    - windows_installer: N/A:Select NekoNyan or JAST Windows installer
-    - linux_videos: N/A:Select Linux videos archive (e.g., "AokanaVideoFilesEN.zip")
+    script:
+      files:
+        - linux_port: https://github.com/leycec/aokana-linux/releases/download/v0.0.1/aokana-linux_0.0.1.zip
+        - windows_installer: N/A:Select NekoNyan or JAST Windows installer
+        - linux_videos: N/A:Select Linux videos archive (e.g., "AokanaVideoFilesEN.zip")
 
-  game:
-    exe: $GAMEDIR/Aokana
+      game:
+        exe: $GAMEDIR/Aokana
 
-  installer:
-    - execute:
-        description: Installing Windows version...
-        file: wine
-        args: start /unix $windows_installer
-    - extract:
-        file: linux_port
-    - extract:
-        file: linux_videos
-    - chmodx: $GAMEDIR/Aokana
+      installer:
+        - execute:
+            description: Installing Windows version...
+            file: wine
+            args: start /unix $windows_installer
+        - extract:
+            file: linux_port
+        - extract:
+            file: linux_videos
+        - chmodx: $GAMEDIR/Aokana
