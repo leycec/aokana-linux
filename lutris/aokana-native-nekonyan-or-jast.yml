@@ -20,8 +20,8 @@ results:
 
       installer:
         - extract:
-    dst: $CACHE/innoextract
-    file: $innoextract
+            dst: $CACHE/innoextract
+            file: $innoextract
         - execute:
             args: -d "$CACHE" "$windows_installer"
             file: $CACHE/innoextract/innoextract
