@@ -22,13 +22,6 @@ distro near you.
 
 ## Installation
 
-> ☢
-
-> These installers are experimental, largely untested, and possibly even (but
-> hopefully *not*) broken. Please help us get a better idea of the state of
-> these installers by **[submitting a new issue documenting your installation
-> experience][local-issue-new].**
-
 1. **Please legally purchase [NekoNyan's English localization of
    *Aokana*][steam-aokana],** because [NekoNyan][nekonyan] continually goes
    beyond the call of corporate duty to support censorship-free localization
@@ -49,7 +42,7 @@ distro near you.
      Edition+* R18 release][steam-aokana-perfect-edition] directly purchased
      from [NekoNyan][nekonyan-aokana] or [JAST][jast-aokana] (identical to the
      uncensored Steam release detailed below):
-     1. Download our [**experimental** NekoNyan-or-JAST Lutris
+     1. Download our [well-tested NekoNyan-or-JAST Lutris
         installer][local-nekonyan-or-jast].
      1. Open a terminal to the directory containing that file.
      1. Copy-and-paste this command into that terminal:
@@ -69,12 +62,15 @@ distro near you.
            for *[Aokana][nekonyan-aokana]* (e.g.,
            `/home/insert_username_here/Games/aokana-native/`).
      4. Click the *Close* button.
-   * **["Steam, please."][steam-aokana]** Your wish is our Linux command. Note,
-     however, that [NekoNyan][nekonyan]'s [vanilla Steam release of
-     *Aokana*][steam-aokana] is the **censored All Ages** version. Some people
-     like that. Some people don't. <sup>Obligatory shoutouts to
-     [/r/visualnovels][r-visualnovels] here.</sup> Again, choose the
-     installation subroute that's right for you:
+   * **["Steam, please."][steam-aokana]** Your wish is our Linux command. Our
+     Steam installers are experimental, largely untested, and possibly
+     even (but hopefully *not*) broken. Please help us get a better idea of the
+     state of these installers by **[submitting a new issue documenting your
+     installation experience][local-issue-new].** Note that
+     [NekoNyan][nekonyan]'s [vanilla Steam release of *Aokana*][steam-aokana]
+     is the **censored All Ages** version. Some people like that. Some people
+     don't. <sup>Obligatory shoutouts to [/r/visualnovels][r-visualnovels]
+     here.</sup> Again, choose the installation subroute that's right for you:
      * **"Censored, please."** Sure thing! It's your visual novel. This
        subroute installs the [censored All Ages vanilla Steam release of
        *Aokana*][steam-aokana]:
@@ -102,8 +98,7 @@ distro near you.
      the financial means – if you haven't already, of course. Without ongoing
      monetary support, the visual novel community will get a BAD END (which is
      bad):
-     1. Download our [**experimental** portable Lutris
-        installer][local-portable].
+     1. Download our [well-tested portable Lutris installer][local-portable].
      1. Open a terminal to the directory containing that file.
      1. Copy-and-paste this command into that terminal:
 
