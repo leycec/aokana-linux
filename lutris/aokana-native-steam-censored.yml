@@ -21,7 +21,7 @@ results:
 
       installer:
         - extract:
-            file: linux_port
+            file: $linux_port
         - extract:
-            file: linux_videos
+            file: $linux_videos
         - chmodx: $GAMEDIR/Aokana

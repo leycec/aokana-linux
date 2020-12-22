@@ -24,13 +24,13 @@ results:
 
       installer:
         - extract:
-            file: perfect_edition_patch
+            file: $perfect_edition_patch
             dst: $CACHE/
         - move:
             src: $CACHE/Aokana_PE+R18_Patch/adult.dat
             dst: $GAMEDIR/Aokana_Data/
         - extract:
-            file: linux_port
+            file: $linux_port
         - extract:
-            file: linux_videos
+            file: $linux_videos
         - chmodx: $GAMEDIR/Aokana
