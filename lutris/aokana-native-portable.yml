@@ -1,7 +1,7 @@
 results:
-  - name: "Ao no Kanata no Four Rhythm 2"
+  - name: "Ao no Kanata no Four Rhythm"
     version: "Linux native from portable Windows directory"
-    game_slug: aokana-native-2
+    game_slug: aokana-native
     slug: aokana-native-portable-installer
     runner: linux
 
