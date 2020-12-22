@@ -49,19 +49,6 @@ distro near you.
 
             lutris -i aokana-native-nekonyan-or-jast.yml
 
-     3. When asked for a *Destination Folder*, select the **Linux game
-        directory** that Lutris has already created for
-        *[Aokana][nekonyan-aokana]* (e.g.,
-        `/home/insert_username_here/Games/aokana-native/`):
-        1. Click the *Browse* button.
-        1. Double-click the **root Linux directory** `/`. Do *not*
-           double-click a Windows directory (e.g., `My Computer`, `Trash`),
-           because Lutris expects native Linux games to be installed to
-           standard Linux directories.
-        1. Select the **Linux game directory** that Lutris has already created
-           for *[Aokana][nekonyan-aokana]* (e.g.,
-           `/home/insert_username_here/Games/aokana-native/`).
-     4. Click the *Close* button.
    * **["Steam, please."][steam-aokana]** Your wish is our Linux command. Our
      Steam installers are experimental, largely untested, and possibly
      even (but hopefully *not*) broken. Please help us get a better idea of the
@@ -107,18 +94,6 @@ distro near you.
      4. When asked to *Select main Windows executable "Aokana.exe"*, select
         the top-level `Aokana.exe` file in the directory containing your
         portable Windows copy of *[Aokana][nekonyan-aokana]*.
-     4. When asked for a *Destination Folder*, select the **Linux game
-        directory** that Lutris has already created for
-        *[Aokana][nekonyan-aokana]* (e.g.,
-        `/home/insert_username_here/Games/aokana-native/`):
-        1. Click the *Browse* button.
-        1. Double-click the **root Linux directory** `/`. Do *not*
-           double-click a Windows directory (e.g., `My Computer`, `Trash`),
-           because *Aokana* won't be there.
-        1. Select the **Linux game directory** that Lutris has already created
-           for *[Aokana][nekonyan-aokana]* (e.g.,
-           `/home/insert_username_here/Games/aokana-native/`).
-     6. Click the *Close* button.
 
 You're done. Praise Misaka!
 

@@ -7,11 +7,15 @@ results:
 
     script:
       files:
-        - linux_port: https://github.com/leycec/aokana-linux/releases/download/v0.0.1/aokana-linux_0.0.1.zip
+        # Manually browsed files, intentionally listed *BEFORE* downloads to
+        # guarantee Lutris requests the user browse these files first.
         - perfect_edition_patch:
             url: https://nekonyansoft.com/download/free/23
             filename: Aokana_PerfectEdition+R18_Patch.zip
         - linux_videos: N/A:Select Linux videos archive (e.g., "AokanaVideoFilesEN.zip")
+
+        # Automated downloads.
+        - linux_port: https://github.com/leycec/aokana-linux/releases/download/v0.0.1/aokana-linux_0.0.1.zip
 
       game:
         appid: 1044620

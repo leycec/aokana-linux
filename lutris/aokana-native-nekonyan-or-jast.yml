@@ -7,36 +7,40 @@ results:
 
     script:
       files:
-        - linux_port: https://github.com/leycec/aokana-linux/releases/download/v0.0.1/aokana-linux_0.0.1.zip
+        # Manually browsed files, intentionally listed *BEFORE* downloads to
+        # guarantee Lutris requests the user browse these files first.
         - windows_installer: N/A:Select NekoNyan or JAST Windows installer
         - linux_videos: N/A:Select Linux videos archive (e.g., "AokanaVideoFilesEN.zip")
+
+        # Automated downloads.
         - innoextract: https://constexpr.org/innoextract/files/innoextract-1.9-linux.tar.xz
+        - linux_port: https://github.com/leycec/aokana-linux/releases/download/v0.0.1/aokana-linux_0.0.1.zip
         - windows_patch_latest:
-            filename: AokanaUpdate1.21PE_march.zip
             url: https://nekonyansoft.com/download/free/patch/7
+            filename: AokanaUpdate1.21PE_march.zip
 
       game:
         exe: $GAMEDIR/Aokana
 
       installer:
         - extract:
-            dst: $CACHE/innoextract
             file: $innoextract
+            dst: $CACHE/innoextract
         - execute:
-            args: -d "$CACHE" "$windows_installer"
             file: $CACHE/innoextract/innoextract
+            args: -d "${CACHE}" "${windows_installer}"
         - merge:
-            dst: $GAMEDIR
             src: $CACHE/app
+            dst: $GAMEDIR
         - extract:
-            dst: $CACHE
             file: $windows_patch_latest
+            dst: $CACHE
         - extract:
-            dst: $GAMEDIR/Aokana_Data
             file: $CACHE/AokanaUpdate1.21.exe
             format: nsis
+            dst: $GAMEDIR/Aokana_Data
         - extract:
-            file: linux_port
+            file: $linux_port
         - extract:
-            file: linux_videos
+            file: $linux_videos
         - chmodx: $GAMEDIR/Aokana
