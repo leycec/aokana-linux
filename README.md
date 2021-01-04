@@ -42,10 +42,11 @@ distro near you.
      Edition+* R18 release][steam-aokana-perfect-edition] directly purchased
      from [NekoNyan][nekonyan-aokana] or [JAST][jast-aokana] (identical to the
      uncensored Steam release detailed below). Either:
-     * **(Recommended)** Install Aokana from the one-click Lutris website:
-       1. Browse to the **[Lutris Aokana page][lutris-aokana]**.
-       1. Click the **Install** button to the right of the "LINUX  Windows
-          NekoNyan or JAST version" installer.
+     * **(Recommended)** [Install **Aokana** from the Lutris
+       website][lutris-aokana]:
+       1. [Browse to the **Lutris Aokana page**][lutris-aokana].
+       1. Click the **Install** button to the right of the *LINUX  Windows
+          NekoNyan or JAST version* installer.
      * Manually install Aokana from this repository:
        1. Download our [well-tested NekoNyan-or-JAST Lutris
           installer][local-nekonyan-or-jast].
