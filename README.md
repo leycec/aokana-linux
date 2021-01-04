@@ -3,9 +3,9 @@
 Ao no Kanata no Four Rhythm (Aokana)… for Linux!
 ================================================
 
-This repository officially hosts **[Lutris-based Linux
-installers][lutris-aokana]** for the [unofficial native Linux
-port][linux-aokana] of *[Ao no Kanata no Four Rhythm: Beyond the sky, into the
+This repository officially hosts [Lutris-based **Linux**
+installers][lutris-aokana] for the [unofficial native Linux port][linux-aokana]
+of *[Ao no Kanata no Four Rhythm: Beyond the sky, into the
 firmament][nekonyan-aokana]*, officially localized as *Aokana: Four Rhythm
 Across the Blue* and commonly abbreviated as merely *Aokana* (あおかな). Read
 the [highly-acclaimed][vndb-aokana] [shounen sports chuunibyou][chuuni] visual
@@ -41,13 +41,18 @@ distro near you.
      course, cultured senpai! This route installs the [*Aokana Perfect
      Edition+* R18 release][steam-aokana-perfect-edition] directly purchased
      from [NekoNyan][nekonyan-aokana] or [JAST][jast-aokana] (identical to the
-     uncensored Steam release detailed below):
-     1. Download our [well-tested NekoNyan-or-JAST Lutris
-        installer][local-nekonyan-or-jast].
-     1. Open a terminal to the directory containing that file.
-     1. Copy-and-paste this command into that terminal:
+     uncensored Steam release detailed below). Either:
+     * **(Recommended)** Install Aokana from the one-click Lutris website:
+       1. Browse to the **[Lutris Aokana page][lutris-aokana]**.
+       1. Click the **Install** button to the right of the "LINUX  Windows
+          NekoNyan or JAST version" installer.
+     * Manually install Aokana from this repository:
+       1. Download our [well-tested NekoNyan-or-JAST Lutris
+          installer][local-nekonyan-or-jast].
+       1. Open a terminal to the directory containing that file.
+       1. Copy-and-paste this command into that terminal:
 
-            lutris -i aokana-native-nekonyan-or-jast.yml
+              lutris -i aokana-native-nekonyan-or-jast.yml
 
    * **["Steam, please."][steam-aokana]** Your wish is our Linux command. Our
      Steam installers are experimental, largely untested, and possibly
@@ -158,13 +163,21 @@ If you enjoy this, you might also enjoy:
   Linux!][leycec-fatestaynight], a [Lutris installer][lutris] automating
   patching and execution of the *[Réalta Nua]* variant of the seminal [shounen
   chuunibyou][chuuni] visual novel *[Fate/stay night][typemoon-fatestaynight]*.
+* [*The Legend of Heroes: Trails of…* for Linux!][leycec-kiseki], [Lutris
+  installers][lutris] automating patching and execution of fully translated and
+  voiced [SoraVoice][kiseki-soravoice] variants of the [legendary *Kiseki*
+  (i.e., *Trails*, *Legend of Heroes*,『英雄伝説 …の軌跡』) Japanese
+  role-playing franchise][kiseki].
 
 [chuuni]: https://forums.fuwanovel.net/topic/1820-chuuni-what-is-this-genre
 [nekonyan]: https://nekonyansoft.com
 [nekonyan-aokana]: https://nekonyansoft.com/shop/product/22
 [jast-aokana]: https://jastusa.com/aokana-four-rhythms-across-the-blue
+[kiseki]: https://en.wikipedia.org/wiki/Trails_(series)
+[kiseki-soravoice]: https://github.com/ZhenjianYang/SoraVoice
 [leycec]: https://github/leycec
 [leycec-fatestaynight]: https://github.com/leycec/fsnrnue
+[leycec-kiseki]:  https://github.com/leycec/kiseki-linux
 [loam]: https://forums.fuwanovel.net/profile/28837-loam
 [loam-post]: https://forums.fuwanovel.net/topic/23163-linux-port-now-released-ao-no-kanata-no-four-rythm-linux-port-18-patch-for-nintendo-switch
 [local-issue-new]:        https://github.com/leycec/aokana-linux/issues/new/choose

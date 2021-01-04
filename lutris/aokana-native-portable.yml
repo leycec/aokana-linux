@@ -1,3 +1,7 @@
+#FIXME: This installer is almost certinly broken under Lutris >= 0.5.8.0. The
+#issue is the caching of ${windows_exe} in an isolated directory, which breaks
+#our attempt to recursively copy the directory containing the original
+#${windows_exe} file.
 results:
   - name: "Ao no Kanata no Four Rhythm"
     version: "Linux native from portable Windows directory"
